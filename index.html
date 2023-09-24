@@ -5,6 +5,7 @@
         <title></title>
         <link rel="stylesheet" href="CSS/style_nav.css">
         <link rel="stylesheet" href="CSS/style_home.css">
+        <link rel="stylesheet" href="CSS/style_carousel.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/3f1192a822.js" crossorigin="anonymous"></script>
     </head>
@@ -50,7 +51,85 @@
         </div>
 
         <hr class="rounded">
+
         <!--Image Carousel-->
+
+        <h1 style="text-align: center; margin-bottom: 40px;">Il Mio Studio</h1>
+
+        <style>
+            .mySlides {
+                display: none;
+                border-radius: 15px;
+            }
+
+            .button {
+                border:none;
+                display:inline-block;
+                padding:8px 16px;
+                vertical-align:middle;
+                overflow:hidden;
+                text-decoration:none;
+                color: white;
+                background-color: black;
+                text-align:center;
+                cursor:pointer;
+                white-space:nowrap
+            }
+
+            .display-left {
+                position:absolute;
+                top:50%;
+                left:0%;
+                transform:translate(0%,-50%);
+                -ms-transform:translate(-0%,-50%)
+            }
+
+            .display-right {
+                position:absolute;
+                top:50%;
+                right:0%;
+                transform:translate(0%,-50%);
+                -ms-transform:translate(0%,-50%)
+            }
+        </style>
+
+        <div class="display-container" style="position:relative; max-width:980px; margin: auto;">
+            <img class="mySlides" src="images/studio9.png" style="width:100%">
+            <img class="mySlides" src="images/studio4.png" style="width:100%">
+            <img class="mySlides" src="images/studio5.png" style="width:100%">
+        
+            <button class="button display-left" onclick="plusDivs(-1)">-</button>
+            <button class="button display-right" onclick="plusDivs(1)">+</button>
+        </div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+                showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("mySlides");
+
+                if (n > x.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = x.length
+                }
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                x[slideIndex-1].style.display = "block";  
+            }
+        </script>
+
         <!--Footer-->
+        
+        <div style="width: 100%; height: 600px; background-color: grey; margin-top: 80px;"></div>
+
     </body>
 </html>
