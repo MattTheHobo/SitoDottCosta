@@ -31,9 +31,10 @@ nav:after {
 
 /*Stile di tutta la NavBar*/
 nav ul {
-	float: right;
+	float: left;
 	list-style: none;
-	margin-right: 13%;
+	margin-left: 13%;
+	/*margin-right: 5%;*/
 	margin-top: 30px;
 	position: relative;
 }
@@ -49,9 +50,9 @@ nav ul li {
 nav ul li a {
 	color: #1E1E1E;
 	text-decoration: none;
-	line-height: 70px;
+	line-height: 40px;
 	font-size: 18px;
-	padding: 8px 15px;
+	padding: 10px;
 }
 
 /* Link hover effect
@@ -65,7 +66,7 @@ nav ul li a:hover {
 /*Modifica lo stile della tabella dei "sottolink" della NavBar*/
 nav ul ul {
 	position: absolute;
-	top: 70px;
+	top: 20px;
 	opacity: 0;
 	visibility: hidden;
 	transition: top .5s;
@@ -73,7 +74,11 @@ nav ul ul {
 
 /*Modifico lo stile di ul quando faccio hover si nav ul li*/
 nav ul li:hover > ul{
-	top: 20px;
+	/*Posizione link a tendina*/
+	float: left;
+	margin-left: 0px;
+	/**/
+	top: 10px;
 	opacity: 1;
 	visibility: visible;
 }
@@ -99,18 +104,51 @@ nav ul ul li a {
 	display: none;
 }
 
-/*MediaQuery*/
+/*MediaQuery Tablet*/
 
-@media screen and (max-width: 968px) {
+@media screen and (min-width: 768px) and (max-width: 1023px){
+	
+	/*Stile di tutta la NavBar*/
+	nav ul {
+		float: left;
+		list-style: none;
+		margin-left: 3%;
+		/*margin-right: 5%;*/
+		margin-top: 30px;
+		position: relative;
+	}
+
+	/*Stile degli elementi della tabella di link della NavBar*/
+	nav ul li {
+		float: left;
+		display: inline-block;
+	}
+
+	/*Stile dei link della tabella di link della NavBar*/
+	nav ul li a {
+		color: #1E1E1E;
+		text-decoration: none;
+		line-height: 40px;
+		font-size: 18px;
+		padding: 4px;
+	}
+}
+
+/*MediaQuery Smartphone*/
+
+@media screen and (max-width: 767px) {
 
 	/*Stile di tutta la NavBar*/
 	nav ul {
 		margin-right: 0px;
+		/*Posizione link della NavBar*/
+		margin-left: 10px;
 		float: left;
 	}
 
 	.logo {
-		width: 100px;
+		margin-left: 20px;
+		width: 120px;
 	}
 
 	/*Stile degli elementi della tabella di link e della tabella di "sottolink" della NavBar*/
@@ -121,7 +159,10 @@ nav ul ul li a {
 
 	/*Modifica lo stile della tabella dei "sottolink" della NavBar*/
 	nav ul ul {
-		top: 70px;
+		top: 40px;
+		/*Posizione link a tendina*/
+		margin-top: 0px;
+		/**/
 		position: static;
 		border-top: none;
 		float: none;
@@ -131,15 +172,16 @@ nav ul ul li a {
 	}
 
 	nav ul ul a {
-		padding-left: 20px;
+		padding-left: 10px;
 	}
 
 	.show {
 		display: block;
 		color: #1E1E1E;
 		font-size: 18px;
-		padding: 0 20px;
-		line-height: 70px;
+		padding: 10px;
+		/*Posizione link "Aree di Intervento" verticale*/
+		line-height: 25px;
 		cursor: pointer;
 	}
 
@@ -162,7 +204,7 @@ nav ul ul li a {
 		display: none;
 	} 
 
-	[id^=button]:checked + ul {
+	[id^=buttonNav]:checked + ul {
 		display: block;
 	}
 }
