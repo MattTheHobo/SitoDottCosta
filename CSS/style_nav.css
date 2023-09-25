@@ -19,6 +19,7 @@ body {
 	/*float: left; mantiene il logo sulla sinistra dello schermo*/
 	float: left;
 	padding-left: 20px;
+	padding-top: 10px;
 	width: 120px;
 }
 
@@ -35,7 +36,7 @@ nav ul {
 	list-style: none;
 	margin-left: 13%;
 	/*margin-right: 5%;*/
-	margin-top: 30px;
+	margin-top: 50px;
 	position: relative;
 }
 
@@ -53,6 +54,7 @@ nav ul li a {
 	line-height: 40px;
 	font-size: 18px;
 	padding: 10px;
+	padding-bottom: 18px;
 }
 
 /* Link hover effect
@@ -66,10 +68,12 @@ nav ul li a:hover {
 /*Modifica lo stile della tabella dei "sottolink" della NavBar*/
 nav ul ul {
 	position: absolute;
-	top: 20px;
+	top: 2px;
 	opacity: 0;
 	visibility: hidden;
 	transition: top .5s;
+	background-color: #EBDFDF;
+	border-radius: 25px;
 }
 
 /*Modifico lo stile di ul quando faccio hover si nav ul li*/
@@ -78,7 +82,7 @@ nav ul li:hover > ul{
 	float: left;
 	margin-left: 0px;
 	/**/
-	top: 10px;
+	top: 1px;
 	opacity: 1;
 	visibility: visible;
 }
@@ -114,7 +118,7 @@ nav ul ul li a {
 		list-style: none;
 		margin-left: 3%;
 		/*margin-right: 5%;*/
-		margin-top: 30px;
+		margin-top: 50px;
 		position: relative;
 	}
 
@@ -131,6 +135,7 @@ nav ul ul li a {
 		line-height: 40px;
 		font-size: 18px;
 		padding: 4px;
+		padding-bottom: 18px;
 	}
 }
 
@@ -191,6 +196,7 @@ nav ul ul li a {
 		position: absolute;
 		right: 40px;
 		line-height: 70px;
+		top: 30px;
 		font-size: 35px;
 		cursor: pointer;
 	}

@@ -1,0 +1,20 @@
+.footer-container {
+    display: table;	
+    clear: both;
+}
+
+.footer-list {
+    float: left;
+	list-style: none;
+	margin-left: 13%;
+	/*margin-right: 5%;*/
+	margin-top: 30px;
+	position: relative;
+}
+
+.footer-list-item {
+    color: white;
+    float: left;
+	display: inline;
+	margin: 0 5px;
+}
