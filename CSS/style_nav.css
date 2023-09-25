@@ -54,6 +54,7 @@ nav ul li a {
 	line-height: 40px;
 	font-size: 18px;
 	padding: 10px;
+	/*Pading bottom per poter cliccare i sottolink, altrimenti spariscono*/
 	padding-bottom: 18px;
 }
 
@@ -73,7 +74,7 @@ nav ul ul {
 	visibility: hidden;
 	transition: top .5s;
 	background-color: #EBDFDF;
-	border-radius: 25px;
+	border-radius: 8px;
 }
 
 /*Modifico lo stile di ul quando faccio hover si nav ul li*/

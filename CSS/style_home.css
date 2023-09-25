@@ -17,11 +17,11 @@
 }
 
 .rounded {
-    border-top: 3px solid #bbb;
+    border-top: 2px solid #1E1E1E;
     border-radius: 5px;
     margin-bottom: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 
 /*MediaQuery Tablet*/
