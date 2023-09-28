@@ -58,6 +58,15 @@ nav ul li a {
 	padding-bottom: 18px;
 }
 
+.show {
+	color: #1E1E1E;
+	line-height: 40px;
+	font-size: 18px;
+	padding: 10px;
+	/*Pading bottom per poter cliccare i sottolink, altrimenti spariscono*/
+	padding-bottom: 18px;
+}
+
 /* Link hover effect
 nav ul li a:hover {
 	color: cyan;
@@ -77,16 +86,15 @@ nav ul ul {
 	border-radius: 8px;
 }
 
-/*Modifico lo stile di ul quando faccio hover si nav ul li*/
+/*Modifico lo stile di ul quando faccio hover si nav ul li
 nav ul li:hover > ul{
-	/*Posizione link a tendina*/
 	float: left;
 	margin-left: 0px;
-	/**/
+
 	top: 1px;
 	opacity: 1;
 	visibility: visible;
-}
+}*/
 
 /*Stile degli elementi della tabella di "sottolink" della NavBar*/
 nav ul ul li {
@@ -104,8 +112,18 @@ nav ul ul li a {
 	text-align: center;
 }
 
+/*Se clicco sopra "Aree di intervento" appare il menu a finestra*/
+input[id^=buttonNav-1]:checked + ul {
+	float: left;
+	margin-left: 0px;
+
+	top: 1px;
+	opacity: 1;
+	visibility: visible;
+}
+
 /*Non mostro la checkbox che uso per fare il menù a tendina in versione ridotta*/
-.show, .hamburg, input {
+.hamburg, input {
 	display: none;
 }
 
@@ -202,9 +220,9 @@ nav ul ul li a {
 		cursor: pointer;
 	}
 
-	nav ul li a:hover {
+	/*nav ul li a:hover {
 		box-shadow: none;
-	}
+	}*/
 
 	/*Nascondo le voci della navbar*/
 	.show + a, ul {
