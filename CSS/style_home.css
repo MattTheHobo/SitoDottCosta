@@ -1,18 +1,27 @@
-.home-page {
-	color: #EBDFDF;
-	font-size: 60px;
-	padding-bottom: 50%;
-	padding-top: 10%;
-	text-align: center;
-	background-image: url(../images/studio4Wallpaper.png);
+div.home-page-container {
+    background-image: url(../images/studio4Wallpaper.png);
 	background-size: 100%;
 	background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
 
-	text-shadow: 0 1px 0 black;
+    display: table;
+    text-align: center;
+    color: #EBDFDF;
+    text-shadow: 0 1px 0 black;
+    padding-top: 50px;;
 }
 
-.home-page:after {
-	content: "Psicologo";
+.home-page-container ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-page1 {
+	font-size: 60px;
+}
+
+.home-page2 {
 	font-size: 40px;
 }
 
@@ -22,6 +31,7 @@
     margin-bottom: 20px;
     margin-left: 12%;
     margin-right: 12%;
+    margin-top: 25px;
 }
 
 /*MediaQuery Tablet*/
@@ -32,12 +42,16 @@
 /*MediaQuery Smartphone*/
 
 @media screen and (max-width: 767px){
-    .home-page {
-        font-size: 40px;
+
+    div.home-page-container {
+        height: 50vh;
     }
 
-    .home-page:after {
-        content: "Psicologo";
-        font-size: 30px;
+    .home-page1 {
+        font-size: 50px;
+    }
+    
+    .home-page2 {
+        font-size: 35px;
     }
 }
