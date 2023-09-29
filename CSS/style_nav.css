@@ -59,6 +59,7 @@ nav ul li a {
 }
 
 .show {
+	cursor: pointer;
 	color: #1E1E1E;
 	line-height: 40px;
 	font-size: 18px;
@@ -135,7 +136,7 @@ input[id^=buttonNav-1]:checked + ul {
 	nav ul {
 		float: left;
 		list-style: none;
-		margin-left: 3%;
+		margin-left: 5%;
 		/*margin-right: 5%;*/
 		margin-top: 50px;
 		position: relative;

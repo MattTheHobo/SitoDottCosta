@@ -36,6 +36,7 @@
     color: #EBDFDF;
     margin-top: 110px;
     margin-right: 10px;
+    margin-bottom: 5px;
     font-size: 12px;
 }
 
@@ -59,7 +60,7 @@
 
     .footer-list-item h2 {
         padding-top: 10px;
-        padding-bottom: 15px;
+        padding-bottom: 5px;
     }
 
     .footer-list-item h2, .footer-text{
