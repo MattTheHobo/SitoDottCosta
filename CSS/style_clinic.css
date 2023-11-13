@@ -1,0 +1,58 @@
+/*
+  AUTO GRID
+  imposta la grandezza minima dell'elemento con "--auto-grid-min-size"
+*/
+
+.cli_header {
+    padding-top: 10px;
+    text-align: center; 
+    color: #1E1E1E;
+}
+
+.rounded {
+    border-top: 2px solid #1E1E1E;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 20px;
+}
+
+.auto-grid {
+    --auto-grid-min-size: 16rem;
+    
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+
+
+/* Presentational styles */
+
+ul.auto-grid li {
+    padding: 3rem 1rem;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    background: rgba(185, 117, 67, 0.7);
+}
+
+ul.auto-grid li:hover {
+    background: rgba(185, 117, 67, 1);
+}
+
+ul.auto-grid li a {
+    padding: 5rem 1rem;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.cli_foot {
+    color: #1E1E1E;
+    padding-left: 6px;
+    padding-top: 30px;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
