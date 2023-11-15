@@ -18,7 +18,7 @@
     margin-top: 20px;
 }
 
-.auto-grid {
+ul.auto-grid {
     --auto-grid-min-size: 16rem;
     
     list-style-type: none;
@@ -29,21 +29,32 @@
 }
 
 
-/* Presentational styles */
-
 ul.auto-grid li {
-    padding: 3rem 1rem;
     border-radius: 20px;
     text-align: center;
     font-size: 1.2rem;
     background: rgba(185, 117, 67, 0.7);
+    transition: 0.4s;
 }
 
 ul.auto-grid li:hover {
     background: rgba(185, 117, 67, 1);
+    box-shadow: 2px 3px 5px -3px #302f2f;
+    /*The fourth property there -2px is the shadow spread, 
+    you can use it to change the spread of the shadow, 
+    making it appear that the shadow is on one side only.
+    This also uses the shadow positioning rules 10px sends it to the right 
+    (horizontal offset) and 0px keeps it under the element (vertical offset.)
+
+    5px is the blur radius
+    
+    https://stackoverflow.com/questions/5115427/how-can-i-add-a-box-shadow-on-one-side-of-an-element*/
 }
 
 ul.auto-grid li a {
+    /*display: block e il padding vanno messi al link e non al list item, 
+    altrimenti l'area del link rimane troppo piccola*/
+    display: block;
     padding: 3rem 1rem;
     text-decoration: none;
     color: #ffffff;
