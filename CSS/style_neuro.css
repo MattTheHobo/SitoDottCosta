@@ -78,6 +78,7 @@ ul.sit_list li:hover {
 
 p.important {
     color: #7E2C1F;
+    background-color: rgb(241, 232, 232);
     font-size: 22px;
     font-weight: 900;
     margin-top: 20px;
