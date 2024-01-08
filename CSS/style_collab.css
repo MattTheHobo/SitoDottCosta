@@ -12,6 +12,14 @@ hr.rounded {
     margin-right: 12%;
     margin-top: 20px;
 }
+.rounded1 {
+    border-top: 2px solid rgba(30, 30, 30, 0.4);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 20px;
+}
 
 ul.collab_container {
     display: table;
@@ -25,6 +33,18 @@ ul.collab_container ul.sublist {
     flex-direction: row;
     list-style-type: none;
     margin-bottom: 20px;
+}
+
+.img_collab {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+.padd_left {
+    padding-left: 10px;
 }
 
 p.important {
@@ -44,5 +64,9 @@ p.important {
 
     ul.collab_container ul.sublist {
         flex-direction: column;
+    }
+
+    .padd_left {
+        padding-left: 0px;
     }
 }
