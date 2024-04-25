@@ -1,0 +1,129 @@
+.chi_header {
+    text-align: center; 
+    color: #1E1E1E;
+}
+
+.rounded {
+    border-top: 2px solid #1E1E1E;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 3%;
+}
+
+.first-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; 
+    height: 100%;
+    border-radius: 15px;
+}
+
+.pres-container {
+    display: table;	
+    clear: both;
+    width: 100%; 
+    margin-top: 80px;
+}
+
+.one_pres_row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.two_pres_row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.vertical-img {
+    width: 30%; 
+    height: 100%;
+    margin-left: 30px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.mobile_img2 {
+    display: none;
+    border-radius: 15px;
+}
+
+.image_2 {
+    width: 35%;
+    height: 100%; 
+    margin-left: 30px;
+    margin-right: 30px;
+    border-radius: 15px;
+}
+
+.presentation {
+    padding-right: 30px;
+    width: 100%;
+}
+
+.second_presentation {
+    padding-left: 30px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .image_2 {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .pres-container {
+        width: 100%; 
+        margin-top: 80px;
+    }
+
+    .first-img {
+        width: 90%;
+    }
+
+    .one_pres_row {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .two_pres_row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vertical-img {
+        display: none;
+    }
+
+    .mobile_img2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        width: 75%;
+        height: 100%;
+    }
+
+    .image_2 {
+        display: none;
+    }
+
+    .presentation {
+        padding-left: 10px;
+        padding-right: 0px;
+    }
+
+    .second_presentation {
+        padding-left: 10px;
+    }
+    
+}

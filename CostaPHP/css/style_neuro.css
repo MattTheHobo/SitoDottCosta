@@ -1,0 +1,91 @@
+.neur_header {
+    padding-top: 10px;
+    text-align: center; 
+    color: #1E1E1E;
+}
+
+.rounded {
+    border-top: 2px solid #1E1E1E;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 20px;
+}
+
+h3.subtxt {
+    padding: 10px;
+    font-size: 18px;
+}
+
+ul.dis_list {
+    display: block;
+    list-style-type: none; 
+    position: relative;
+}
+
+/*ul.dis_list > li:before {
+    content: "\f111";*/  /*Put the fontawesome unicode here preceded by slash */
+    /*font-family: "Font Awesome 6 Free";
+    font-weight: 0;
+    margin-right: 8px;*/  /* Spacing between bullet and list text */
+    /*color: #1E1E1E;  
+}*/
+
+ul.dis_list li {
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+ul.dis_list li:hover {
+    transform: scale(1.1);
+    z-index: 100;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
+}
+
+ul.sit_list {    
+    display: block;
+    list-style-type: none; 
+    position: relative; 
+}
+
+/*ul.sit_list > li:before {
+    content: "\f111";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-right: 8px;  
+    color: #1E1E1E;
+}*/
+
+ul.sit_list li {
+    list-style: none;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+ul.sit_list li:hover {
+    transform: scale(1.1);
+    z-index: 100;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, .1);
+}
+
+p.important {
+    color: #7E2C1F;
+    background-color: rgb(241, 232, 232);
+    font-size: 22px;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 10px;
+    border-radius: 15px;
+    /*box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;*/
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
