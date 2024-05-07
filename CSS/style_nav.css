@@ -79,12 +79,14 @@ nav ul li a:hover {
 /*Modifica lo stile della tabella dei "sottolink" della NavBar*/
 nav ul ul {
 	position: absolute;
-	top: 2px;
+	/*top: 2px;
 	opacity: 0;
-	visibility: hidden;
-	transition: top .5s;
+	visibility: hidden;*/
+	display: none;
 	background-color: #EBDFDF;
 	border-radius: 8px;
+	animation: fadeIn 0.3s;
+	animation-fill-mode: both;
 }
 
 /*Modifico lo stile di ul quando faccio hover si nav ul li
@@ -117,15 +119,26 @@ nav ul ul li a {
 input[id^=buttonNav-1]:checked + ul {
 	float: left;
 	margin-left: 0px;
-
-	top: 1px;
+	display: block;
+	/*top: 1px;
 	opacity: 1;
-	visibility: visible;
+	visibility: visible;*/
 }
 
 /*Non mostro la checkbox che uso per fare il menù a tendina in versione ridotta*/
 .hamburg, input {
 	display: none;
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+		top: -30px;
+	}
+	100% {
+		opacity: 1;
+		top: -10px;
+	}
 }
 
 /*MediaQuery Tablet*/
@@ -169,6 +182,8 @@ input[id^=buttonNav-1]:checked + ul {
 		/*Posizione link della NavBar*/
 		margin-left: 10px;
 		float: left;
+		animation: fadeInMob 0.5s;
+		animation-fill-mode: both;
 	}
 
 	.logo {
@@ -220,6 +235,17 @@ input[id^=buttonNav-1]:checked + ul {
 		font-size: 35px;
 		cursor: pointer;
 	}
+
+    @keyframes fadeInMob {
+        0% {
+            opacity: 0;
+            left: -30px;
+        }
+        100% {
+            opacity: 1;
+            left: 0px;
+        }
+    }
 
 	/*nav ul li a:hover {
 		box-shadow: none;
