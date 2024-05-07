@@ -18,9 +18,9 @@ body {
 .logo {
 	/*float: left; mantiene il logo sulla sinistra dello schermo*/
 	float: left;
-	padding-left: 20px;
+	padding-left: 40px;
 	padding-top: 10px;
-	width: 120px;
+	width: 140px;
 }
 
 nav:after {
