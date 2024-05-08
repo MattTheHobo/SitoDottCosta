@@ -18,37 +18,30 @@
 
         <h1 class="mio-studio" >Il Mio Studio</h1>
 
-        <div class="display-container">
-            <img class="slides" src="./images/studio2.jpeg" style="width:100%">
-            <img class="slides" src="./images/studio4.jpeg" style="width:100%">
-            <img class="slides" src="./images/studio8.jpeg" style="width:100%">
-        
-            <button class="button display-left fa-solid fa-angle-left" onclick="plusDivs(-1)"></button>
-            <button class="button display-right fa-solid fa-angle-right" onclick="plusDivs(1)"></button>
+        <div class="list-container">
+            <ul class="list">
+                <li class="item"><img class="carous-image-lt" src="./images/studio2.jpeg" alt="image/jpeg"></li>
+                <li class="item"><img class="carous-image" src="./images/studio4.jpeg" alt="image/jpeg"></li>
+                <li class="item"><img class="carous-image-rt" src="./images/studio8.jpeg" alt="image/jpeg"></li>
+            </ul>
+            <button onclick="handleClick('previous')" class="button button--previous" type="button">☚</button>
+            <button onclick="handleClick('next')" class="button button--next" type="button">☛</button>
         </div>
 
         <script>
-            var slideIndex = 1;
-            showDivs(slideIndex);
-            
-            function plusDivs(n) {
-                showDivs(slideIndex += n);
-            }
-            
-            function showDivs(n) {
-                var i;
-                var x = document.getElementsByClassName("slides");
+            const list = document.querySelector(".list");
 
-                if (n > x.length) {
-                    slideIndex = 1
+            // We want to know the width of one of the items. We'll use this to decide how many pixels we want our carousel to scroll.
+            const item = document.querySelector(".item");
+            const itemHeight = item.offsetHeight;
+
+            function handleClick(direction) {
+                // Based on the direction we call `scrollBy` with the item width we got earlier
+                if(direction === "previous") {
+                list.scrollBy({ left: -itemHeight / 2, behavior: "smooth" });
+                } else {
+                list.scrollBy({ left: itemHeight / 2, behavior: "smooth" });
                 }
-                if (n < 1) {
-                    slideIndex = x.length
-                }
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                }
-                x[slideIndex-1].style.display = "block";  
             }
         </script>
 
