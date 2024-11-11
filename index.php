@@ -20,12 +20,12 @@
 
         <div class="list-container">
             <ul class="list">
-                <li class="item"><img class="carous-image-lt" src="./images/studio2.jpeg" alt="image/jpeg"></li>
-                <li class="item"><img class="carous-image" src="./images/studio4.jpeg" alt="image/jpeg"></li>
-                <li class="item"><img class="carous-image-rt" src="./images/studio8.jpeg" alt="image/jpeg"></li>
+                <li class="item"><img class="carous-image" src="./images/studio2Resiz.jpeg" alt="image/jpeg"></li>
+                <li class="item"><img class="carous-image" src="./images/studio4Resiz.jpeg" alt="image/jpeg"></li>
+                <li class="item"><img class="carous-image" src="./images/studio8Resiz.jpeg" alt="image/jpeg"></li>
             </ul>
-            <button onclick="handleClick('previous')" class="button button--previous" type="button">☚</button>
-            <button onclick="handleClick('next')" class="button button--next" type="button">☛</button>
+            <button onclick="handleClick('previous')" class="button button--previous" type="button"><i class="fa-solid fa-hand-point-left"></i></button>
+            <button onclick="handleClick('next')" class="button button--next" type="button"><i class="fa-solid fa-hand-point-right"></i></button>
         </div>
 
         <script>
